@@ -1,0 +1,33 @@
+body {
+    background-image: url("andromeda-pixilart.png");
+    background-size: 1000px;
+}
+
+h1 {
+    color: white;
+    transform: translateX(1000px);
+    font-size: 40px;
+}
+
+#main-box {
+    display: flex;
+    justify-self: center;
+    border: white;
+    border-width: 5px;
+    height: 750px;
+    width: 1250px;
+    background-color: black;
+}
+
+.boxes {
+    height: 750px;
+    transform: translate(1750px, -650px);
+}
+
+#qte1 {
+    background-image: url(qte1.gif);
+    background-size: 150px;
+    height: 150px;
+    width: 150px;
+    visibility: hidden;
+}
