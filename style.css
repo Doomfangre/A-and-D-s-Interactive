@@ -24,8 +24,8 @@ h1 {
     transform: translate(1750px, -650px);
 }
 
-#qte1 {
-    background-image: url(qte1.gif);
+#qte1, #qte2, #qte3 {
+    position: fixed;
     background-size: 150px;
     height: 150px;
     width: 150px;
