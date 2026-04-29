@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -21,7 +20,7 @@
         <!--Intro Text of story(grab specf id to appear 1 at a time)-->
         <section id="beginPart">
             <p id="introStory"></p>
-            <button><a href="">Begin Journey</a></button>
+            <button id="journeyStart">Begin Journey</button>
         </section>
 
         <div id="story">
@@ -230,6 +229,7 @@ let story = {
                 ["Begin Journey", "spider", "village", "shore"]
             ]
         },
+        //Spider Begining
         spider : {
             text : "Feeling the warmth of the sun in your face, you awake still in pain from the wounds your sister gave you. You find yourself in a giant spider web inside an open area with rocky walls and a giant opening at the top. You spot the light hue of the blue spider wandering in the dark, staring at you. Panicked, you try to escape the web but are unable to.",
             choices : [
@@ -238,61 +238,28 @@ let story = {
              ["Accept your fate as spider food", "fate"]
             ]
         },
-        wrig : {
-            text: "You decide to wriggle out, however you werent able to. After constant wriggling you make it out of the web. You catch your fall and decide to escape so you enter a nearby cave entrance in the spider's den. The cave is too small for the spider to pursue. You wander in the darkness, limping while hugging hard cold walls of the cave. You suddenly feel something small brush past your leg. Shaken up at first, you halt trying to detect the unknown creature. However, you hear its pitter patter footsteps running the same direction as you were going. Relived, you follow it until eventually you make it out of the cave. You exit the cave and the unknown creature was actually small and fuzzy. You thank the unknown creature for its support and continue on your way.",
+        village : {
+            text : "An unknown smell wakes you up and you find yourself in some soft material. While injured, you get up and decide you need to do something.",
+            choices : []
         },
-        look : {
-            text : "You look at your surroundings and you find a nearby rusty hand axe and a frail looking sword.",
-            choices : [
-                ["Axe", "axe"],
-                ["Frail sword", "frailSword"],
-                ["Choose neither", "noWeapon"],
-            ]
-        },
+        shore : {
+            text : "You awake in salty water with sand on your face. Dazed and injured, you start to walk and limp away from the cold salty water and rest under the shade of a palm tree. You decided you need to move and figure out a way to secure food, water, and to patch your wounds.",
+            choices : []
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    }
-
-
-
-    
-let min = 0;
-let max = 3;
-function rando() {
-    return Math.floor((Math.random() * max - min) - min );
 }
-let t = rando()
 
+
+
+
+function rando() {
+    return Math.floor(Math.random() * 3);
+}
+
+let t = rando()
 function start() {
     if (t === 0) {
         return spider;
-        spider.style.display = "block";
     } else if (t === 1) {
         return village;
     } else {
@@ -301,7 +268,7 @@ function start() {
 }
 
 
-function laytext(text) {
+function begin(text) {
     const story = document.createElement('p');
     story.innerText = text;
 }
