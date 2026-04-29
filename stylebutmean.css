@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+}
+
+
+#textbox {
+    display: flex;
+    
+    height: 200px;
+    width: 1250px;
+    background-repeat: no-repeat;
+    background-image: url(Text.png);
+    background-size: 400px 800;
+}
