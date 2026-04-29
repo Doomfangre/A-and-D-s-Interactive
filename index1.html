@@ -21,17 +21,11 @@
 
         <!--Intro Text of story(grab specf id to appear 1 at a time)-->
         <section id="beginPart">
-            <p id="beginIntro">Start Journey</p>
-            <p id="intextOne">Up above the clouds,  there is a kingdom in which you play as  our main protagonist. Sora, the prince and heir to the king. You reside in the living castle along with your mother and younger sister.</p>
-            <p id="intextTwo">However, you notice a change in your sister's behavior but don't think much of it. Tragically, only a week later, the parents, who are the king and queen, were found deceased due to an unknown cause.</p>
-            <p id="intextThree">In the kings will, you were supposed to become the new ruler of the kingdom. However, the head royal guard declared your sister to be the ruler of the kingdom.</p>
-            <p id="intextFour">The head guard explained to the public how the deaths of the king, queen, and the heir to the throne were tragic. He explained that the bloodline will live through the soon to be queen of the living castle.</p>
-            <p id="intextFive">Confused, he confronts his sister, however his sister is not the same as she was before her disappearance. She had become significantly stronger and when you confronted her, she had a weapon in her hand.</p>
-            <p id="intextSix">You were beaten almost to the brink of death, and was slowly losing consciousness as you were dragged to the edge of the clouds. She explains how she was the one who ended their parents and how now she will end you.</p>
-            <p id="intextSeven">She then kicks you off the edge of the clouds. You lose consciousness from the power kick and rapidly fall down to the earth, unknowingly starting your journey.</p>
+            <p id="introStory"></p>
+            <button><a href="">Begin Journey</a></button>
         </section>
 
-
+        <div id="story">
         <!--Beginning 1-->
         <section id="spiderStart">
             <h2 id="spidintroName">The Spider Den</h2>
@@ -213,7 +207,7 @@
 
                 <!--End of beginning 3-->
             </section>
-
+        </div>
     <section>
             <section class="Inventory"></section>
             <section class="Inventory"></section>
@@ -225,21 +219,98 @@
 </body>
 <script>
 
+let spider = document.getElementById("spiderStart")
+let village = document.getElementById("villageStart")
+let shore = document.getElementById("shoreStart")
+let storyCont = document.getElementById("story")
 
-    const story = {
-        intro:{
-            text: ""
-        }
+let story = {
+        introStory : {
+            text : "Up above the clouds, there is a kingdom in which you play as our main protagonist. Sora, the prince and heir to the king. You reside in the living castle along with your mother and younger sister. One day, your younger sister disappears, and for a week your parents are restlessly searching for her. Until eventually she is found and returned. However, you notice a change in your sister's behavior but don't think much of it. Tragically, only a week later, the parents, who are the king and queen, were found deceased due to an unknown cause. In the kings will, you were supposed to become the new ruler of the kingdom. However, the head royal guard declared your sister to be the ruler of the kingdom. The head guard explained to the public how the deaths of the king, queen, and the heir to the throne were tragic. He explained that the bloodline will live through the soon to be queen of the living castle. Confused, he confronts his sister, however his sister is not the same as she was before her disappearance. She had become significantly stronger and when you confronted her, she had a weapon in her hand. You were beaten almost to the brink of death, and was slowly losing consciousness as you were dragged to the edge of the clouds. She explains how she was the one who ended their parents and how now she will end you. She then kicks you off the edge of the clouds. You lose consciousness from the power kick and rapidly fall down to the earth, unknowingly starting your journey.", 
+            choices : [
+                ["Begin Journey", "spider", "village", "shore"]
+            ]
+        },
+        spider : {
+            text : "Feeling the warmth of the sun in your face, you awake still in pain from the wounds your sister gave you. You find yourself in a giant spider web inside an open area with rocky walls and a giant opening at the top. You spot the light hue of the blue spider wandering in the dark, staring at you. Panicked, you try to escape the web but are unable to.",
+            choices : [
+             ["Wriggle", "wrig"],
+             ["Look around", "look"],
+             ["Accept your fate as spider food", "fate"]
+            ]
+        },
+        wrig : {
+            text: "You decide to wriggle out, however you werent able to. After constant wriggling you make it out of the web. You catch your fall and decide to escape so you enter a nearby cave entrance in the spider's den. The cave is too small for the spider to pursue. You wander in the darkness, limping while hugging hard cold walls of the cave. You suddenly feel something small brush past your leg. Shaken up at first, you halt trying to detect the unknown creature. However, you hear its pitter patter footsteps running the same direction as you were going. Relived, you follow it until eventually you make it out of the cave. You exit the cave and the unknown creature was actually small and fuzzy. You thank the unknown creature for its support and continue on your way.",
+        },
+        look : {
+            text : "You look at your surroundings and you find a nearby rusty hand axe and a frail looking sword.",
+            choices : [
+                ["Axe", "axe"],
+                ["Frail sword", "frailSword"],
+                ["Choose neither", "noWeapon"],
+            ]
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
 
 
+    
+let min = 0;
+let max = 3;
 function rando() {
-    return Math.floor(Math.random() * 3);
+    return Math.floor((Math.random() * max - min) - min );
+}
+let t = rando()
+
+function start() {
+    if (t === 0) {
+        return spider;
+        spider.style.display = "block";
+    } else if (t === 1) {
+        return village;
+    } else {
+        return shore;
+    }
 }
 
 
+function laytext(text) {
+    const story = document.createElement('p');
+    story.innerText = text;
+}
 
- 
+start()
+
+
+
+
 </script>
 </html>
