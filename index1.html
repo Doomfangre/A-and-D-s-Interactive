@@ -24,6 +24,8 @@
     </section>
     
 </body>
+
+
 <script>
 
 const storyCont = document.getElementById("story")
@@ -78,6 +80,40 @@ const story = {
                 ["Think","think"]
             ]
         },
+        sit : {
+            text : "You have the sudden urge to sit, you feel very tired and exhausted. You sit down on the soft material you landed in and suddenly close your eyes to get some rest. You awake and discover the once vibrant place full of life is gone and you are now in a barren wasteland. You continue to sit until you eventually die from lack of story progression.",
+        },
+        explore : {
+            text : "You decided to explore your surroundings and that sitting around was a dumb idea. You wander around and discover there is some sort of civilization underground as the villagers and other humanoid figures enter and exit an entrance. You do not know if you should interact with those “people” or head to find some water in the forest.",
+            choices : [
+                ["Head into the forest", "noInteraction"],
+                ["Interact with the people", "interaction"],
+                ["Do nothing", "nothing"]
+            ]
+        },
+        noInteraction : {
+            text : "You head into the forest , deciding that interacting with “people” is not worth it. Thirsty and hungry, you seek to find a water source. You hear the rush of water and go straight towards it. After finding the water source and taking a drink, you clean your wounds and wrap it with the leaves around you. You then think about what you should do to enact revenge upon your corrupt sister. However, before you try to even think about revenge, you decide to discover the unknown world.",
+        },
+        interaction : {
+            text : "You decide to enter the village and try to seek help from the “people”. As you enter the village, many look at you with curiosity and awe. As you limp, covered in blood, a traveler helps you and takes you to the local doctor. They help you stitch your wounds and give you some food to eat. All types of communication do not work due to the language barrier between each other. Although there is a language barrier, you still want to say thanks to “people” that helped you. How will you thank them?",
+            choices : [
+                ["Nicely and Politely", "nice"],
+                ["Rude and un-grateful","rude"],
+                ["Silent and mysterious", "mysterious"]
+            ]
+        },
+        nice : {
+            text : "You thank them for their kindness even though there is a language barrier. They do not understand what you were saying but they knew it was meant with good intentions. WIth that, they also give you a comically large spoon as a gift to help you on your way, you thank them and decide it's time to take revenge on your sister. You leave and start your long journey.",
+        },
+        rude : {
+            text : "You dismiss their kindness and demand more from them. They do not understand what you have said, however they do understand that you do not have good intentions. The mole villagers start making an ear piercing noise and rush towards you…",
+        },
+        mysterious : {
+            text : "You stay silent and they stare in confusion. You start to exit the hut but although confused, they give you a comically large spoon as a gift to help you on your way. You stare at them with no emotion, grab the spoon and leave. As you think about how to take revenge on your sister, the people just stare in confusion on what just happened.",
+        },
+        nothing : {
+            text : "You decided that it was best to do nothing. You did nothing to patch your wounds, find food or water, or do anything of that matter. You just decided to do absolutely nothing. Since you did nothing, you slowly succumbed to the injuries and died.",
+        },
         shore : {
             bgSource: "path/to/image.jpg",
             text : "You awake in salty water with sand on your face. Dazed and injured, you start to walk and limp away from the cold salty water and rest under the shade of a palm tree. You decided you need to move and figure out a way to secure food, water, and to patch your wounds.",
@@ -86,6 +122,15 @@ const story = {
                 ["Head into forest", "intoforestTwo"],
                 ["Swim in the water", "swimWater"]
             ]
+        },
+        shakepalmTree : {
+            text : "Text Holder",
+        },
+        intoforestTwo : {
+            text : "You head into the forest thinking that's the most logical thing to do. With thirst and hunger on your mind, you seek the forest for a water source. You hear the rush of water and go straight towards it. After finding the water source and taking a drink, you clean your wounds and wrap it with the leaves around you. You then think about what you should do to enact revenge upon your corrupt sister. Before you try to even think about revenge, you decide to discover the unknown world.",
+        },
+        swimWater : {
+            text : "You decided swimming was your best option. You head to the water and start swimming along the shore. However, the blood from the injuries attracted sharks and they were hungry for food.",
         },
 
 }
