@@ -5,12 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hymn of Daedalus</title>
 </head>
-<style>
-#spiderStart, #villageStart, #shoreStart{
-    display: none;
-
-}
-</style>
 <body>
     <header>Hymn of Daedalus</header>
     <section>
@@ -18,195 +12,9 @@
         <progress class="Aura" value="67" max="100"></progress>
     </section>
 
-        <!--Intro Text of story(grab specf id to appear 1 at a time)-->
-        <section id="beginPart">
-            <p id="introStory"></p>
-            <button id="journeyStart">Begin Journey</button>
-        </section>
-
-        <div id="story">
-        <!--Beginning 1-->
-        <section id="spiderStart">
-            <h2 id="spidintroName">The Spider Den</h2>
-
-            <section id="spidintroText">
-                <p id="spidtextOne">Feeling the warmth of the sun in your face, you awake still in pain from the wounds your sister gave you. You find yourself in a giant spider web inside an open area with rocky walls and a giant opening at the top.</p> 
-                <p id="spidtextTwo">You spot the light hue of the blue spider wandering in the dark, staring at you. Panicked, you try to escape the web but are unable to.</p>
-            </section>
-
-            <section id="spidChoice">
-                <button id="wrig">Wriggle</button>
-                <button id="look">Look around</button>
-                <button id="fate">Accept your fate as spider food</button>
-            </section>
-
-
-            <!--Wriggle 3 times if chosen-->
-            <section id="wrigChoice"> 
-                <p id="wrigtextOne">You decide to wriggle out, however you werent able to.</p>
-
-                <!--After 3 times-->
-                <p id="wrigtextTwo">After constant wriggling you make it out of the web. You catch your fall and decide to escape so you enter a nearby cave entrance in the spider's den</p>
-                <p id="wrigtextThree">The cave is too small for the spider to pursue. You wander in the darkness, limping while hugging hard cold walls of the cave.</p>
-                <p id="wrigtextFour">You suddenly feel something small brush past your leg. Shaken up at first, you halt trying to detect the unknown creature.</p>
-                <p id="wrigtextFive"> However, you hear its pitter patter footsteps running the same direction as you were going. Relived, you follow it until eventually you make it out of the cave.</p>
-                <p id="wrigtextSix">You exit the cave and the unknown creature was actually small and fuzzy. You thank the unknown creature for its support and continue on your way.</p>
-            </section>
-
-                <!--Look / weapon choices-->
-                <section id="lookChoice">
-                    <p id="lookText">You look at your surroundings and you find a nearby rusty hand axe and a  frail looking sword.</p>
-                
-                    <section id="weaponsCoice">
-                        <button id="axe">Axe</button>
-                        <button id="frailSword">Frail Sword</button>
-                        <button id="noWeapon">Choose Neither</button>
-                    </section>
-
-                        <section id="axeChoice">
-                            <p id="axetextOne">You grab the axe and cut the web,  you drop the axe trying to catch your fall, the axe falls on the ground but it is still in good condition.</p>
-                            <p id="axetextTwo">You feel the need to escape so you enter a nearby cave entrance in the spider's den, the cave is too small for the spider to pursue.</p>
-                            <p id="axetextThree">You wander the darkness, not knowing where you are going, suddenly you feel a small creature brush past your leg, shaken up at first, you halt trying to detect the unknown creature.</p>
-                            <p id="axetextFour">However, you hear its pitter patter footsteps running the same direction as you were going. Relived, you follow it until eventually you make it out of the cave.</p>
-                            <p id="axetextFive">You exit the cave and the unknown creature was actually small and fuzzy. You thank the unknown creature for its support and continue on your way.</p>
-                        </section>
-
-                        <section id="swordChoice">
-                            <p id="swordtextOne">You grab the sword and cut the web, you drop the sword trying to catch your fall, the sword falls on the ground and shatters on impact.</p>
-                            <p id="swordtextTwo">You decide to abandon it and escape so you enter a nearby cave entrance in the spider's den, the cave is too small for the spider to pursue.</p>
-                            <p id="swordtextThree">You wander the darkness, not knowing where you are going, suddenly you feel a small creature brush past your leg, shaken up at first, you halt trying to detect the unknown creature.</p>
-                            <p id="swordtextFour">However, you hear its pitter patter footsteps running the same direction as you were going. Relived, you follow it until eventually you make it out of the cave.</p>
-                            <p id="swordtextFive">You exit the cave and the unknown creature was actually small and fuzzy. You thank the unknown creature for its support and continue on your way.</p>
-                        </section>
-
-                        <section id="nowepChoice">
-                            <p id="noweptextOne">You decide to not grab any of the weapons and try to claw at the hard webbing.</p>
-                            <p id="noweptextTwo">You break a piece of the web, however that causes you to drop and spin into more web leaving you stuck. Unable to get out, you succumb to your injuries and die.</p>
-                        </section>
-                </section>
-
-             <!--Fate of Spider Food-->
-            <section id="fateChoice">
-                <p id="fatetextOne">You panic and decide that death is the best option. You await for the spider to eat you, however since its day, it is unable to do you harm.</p>
-                <p id="fatetextTwo">Regardless, you stick with your choice to stay in the web and you slowly succumb to the injuries and die.</p>
-            </section>
-        </section>
-
-        <!--End of beginning 1-->
-        
-        <!--Beginning 2-->
-            <section id="villageStart">
-                <h2 id="vilintroName">The Mole Village</h2>
-                <section id="vilintroText">
-                    <p id="vilintxtOne">An unknown smell wakes you up and you find yourself in some soft material. While injured, you get up and decide you need to do something.</p>
-                </section>
-                    
-                <section id="vilChoices">
-                    <button id="sit">Sit for Eternity</button>
-                    <button id="explore">Explore Surroundings</button>
-                    <button id="think">Think</button>
-                </section>
-
-                <section id="sitChoice">
-                    <p id="sittextOne"> You have the sudden urge to sit, you feel very tired and exhausted. You sit down on the soft material you landed in and suddenly close your eyes to get some rest.</p>
-                    <p id="sittextTwo">You awake and discover the once vibrant place full of life is gone and you are now in a barren wasteland. You continue to sit until you eventually die from lack of story progression.</p>
-                </section>
-
-                <section id="exploreChoice">
-                    <p id="expltextOne">You decided to explore your surroundings and that sitting around was a dumb idea.</p>
-                    <p id="expltextTwo">You wander around and discover there is some sort of civilization underground as the villagers and other humanoid figures enter and exit an entrance.</p>
-                    <p id="expltextThree">You do not know if you should interact with those “people” or head to find some water in the forest.</p>
-                </section>
-
-                <section id="thinkChoice">
-                    <p id="thktextOne">You decided to think about your situation, you thought for a very good minute. Lost in thought, you think of what to do in this situation.</p>
-                    <p id="thktextTwo">The more you thought, the more you were thinking. After all the thinking you decided moving around was your best option.</p>
-                    <p id="tnktextThree">After determining a choice, you think how thinking was a useless option and should have just chosen to explore your surroundings.</p>
-                </section>
-
-                <section id="interactChoices">
-                    <button id="intoForest">Head into the forest</button>
-                    <button id="peopleInt">Interact with the "people"</button>
-                    <button id="doNothing">Do nothing</button>
-                </section>
-
-                <section id="forestChoice">
-                    <p id="fortextOne">You head into the forest , deciding that interacting with “people” is not worth it.</p>
-                    <p id="fortextTwo">Thirsty and hungry, you seek to find a water source. You hear the rush of water and go straight towards it.</p>
-                    <p id="fortextThree">After finding the water source and taking a drink, you clean your wounds and wrap it with the leaves around you. You then think about what you should do to enact revenge upon your corrupt sister.</p>
-                </section>
-
-                <!--People Interaction Choice(s)-->
-                <section id="peopleChoice">
-                    <p id="ppltextOne">You decide to enter the village and try to seek help from the “people”. As you enter the village, many look at you with curiosity and awe.</p>
-                    <p id="ppltextTwo">As you limp, covered in blood, a traveler helps you and takes you to the local doctor. They help you stitch your wounds and give you some food to eat.</p>
-                    <p id="ppltextThree">All types of communication do not work due to the language barrier between each other.</p>
-                    <p id="ppltextFour">Although there is a language barrier, you still want to say thanks to “people” that helped you. How will you thank them?</p>
-                
-                
-                        <section id="thanksChoices">
-                            <button id="nicePolite">Nicely and politely</button>
-                            <button id="rudeUngreat">Rude and un-greatful</button>
-                            <button id="silentMsyt">Silent and Mysterious</button>
-                        </section>
-                
-                            <section id="niceChoice">
-                                <p id="nicetextOne">You thank them for their kindness even though there is a language barrier. They do not understand what you were saying but they knew it was meant with good intentions. </p>
-                                <p id="nicetextTwo">WIth that, they also give you a comically large spoon as a gift to help you on your way, you thank them and decide it's time to take revenge on your sister. You leave and start your long journey.</p>
-                            </section>
-
-                            <section id="rudeChoice">
-                                <p id="rudetextOne">You dismiss their kindness and demand more from them. They do not understand what you have said, however they do understand that you do not have good intentions.</p>
-                                <p id="rudetextTwo">The mole villagers start making an ear piercing noise and rush towards you…</p>
-                            </section>
-
-                            <section id="silentChoice">
-                                <p id="siltextOne">You stay silent and they stare in confusion. You start to exit the hut but although confused, they give you a comically large spoon as a gift to help you on your way.</p>
-                                <p id="siltextTwo">You stare at them with no emotion, grab the spoon and leave. As you think about how to take revenge on your sister, the people just stare in confusion on what just happened.</p>
-                            </section>
-                </section>
-
-                <section id="nothingChoice">
-                    <p id="nothtextOne">You decided that it was best to do <strong>nothing.</strong> You did <strong>nothing</strong> to patch your wounds, find food or water, or do anything of that matter.</p>
-                    <p id="nothtextTwo">You just decided to do absolutely <strong>nothing.</strong> Since you did <strong>nothing,</strong> you slowly succumbed to the injuries and died. </p>
-                </section>
-            </section>
-            
-        <!--End of beginning 2-->
-
-        <!--Beginning 3-->
-
-            <section id="shoreStart">
-                <h2 id="seaintroName">The Sea Shore</h2>
-
-                <section id="seaintroText">
-                    <p id="seatextOne">You awake in salty water with sand on your face. Dazed and injured, you start to walk and limp away from the cold salty water and rest under the shade of a palm tree.</p>
-                    <p id="seatextTwo"> You decided you need to move and figure out a way to secure food, water, and to patch your wounds.</p>
-                </section>
-
-                <section id="seaChoices">
-                    <button id="shakepalmTree">Shake palm tree</button>
-                    <button id="intoforestTwo">Head into forest</button>
-                    <button id="swimWater">Swim in the water</button>
-                </section>
-
-                <section id="treeChoice">
-                
-                </section>
-
-                <section id="forestchoiceTwo">
-                    <p id="foretextOne">You head into the forest thinking that's the most logical thing to do. With thirst and hunger on your mind, you seek the forest for a water source. </p>
-                    <p id="foretextTwo">You hear the rush of water and go straight towards it. After finding the water source and taking a drink, you clean your wounds and wrap it with the leaves around you.</p>
-                    <p id="foretextThree">You then think about what you should do to enact revenge upon your corrupt sister.</p>
-                </section>
-
-                <section id="swimChoice">
-                    <p id="swimtextOne">You decided swimming was your best option. You head to the water and start swimming along the shore. However, the blood from the injuries attracted sharks and they were hungry for food.</p>
-                </section>
-
-                <!--End of beginning 3-->
-            </section>
-        </div>
+        <!--Ostory object will send text here-->
+        <section id="story"></section>
+        <section id="choices"></section>
     <section>
             <section class="Inventory"></section>
             <section class="Inventory"></section>
@@ -218,64 +26,123 @@
 </body>
 <script>
 
-let spider = document.getElementById("spiderStart")
-let village = document.getElementById("villageStart")
-let shore = document.getElementById("shoreStart")
-let storyCont = document.getElementById("story")
-
-let story = {
+const storyCont = document.getElementById("story")
+const choiceCont = document.getElementById("choices")
+const startOptions = ["spider","shore","village"]
+const myStory = ['introStory']
+const story = {
         introStory : {
             text : "Up above the clouds, there is a kingdom in which you play as our main protagonist. Sora, the prince and heir to the king. You reside in the living castle along with your mother and younger sister. One day, your younger sister disappears, and for a week your parents are restlessly searching for her. Until eventually she is found and returned. However, you notice a change in your sister's behavior but don't think much of it. Tragically, only a week later, the parents, who are the king and queen, were found deceased due to an unknown cause. In the kings will, you were supposed to become the new ruler of the kingdom. However, the head royal guard declared your sister to be the ruler of the kingdom. The head guard explained to the public how the deaths of the king, queen, and the heir to the throne were tragic. He explained that the bloodline will live through the soon to be queen of the living castle. Confused, he confronts his sister, however his sister is not the same as she was before her disappearance. She had become significantly stronger and when you confronted her, she had a weapon in her hand. You were beaten almost to the brink of death, and was slowly losing consciousness as you were dragged to the edge of the clouds. She explains how she was the one who ended their parents and how now she will end you. She then kicks you off the edge of the clouds. You lose consciousness from the power kick and rapidly fall down to the earth, unknowingly starting your journey.", 
-            choices : [
-                ["Begin Journey", "spider", "village", "shore"]
-            ]
+            choices : [] // empty to invoke special logic 
         },
         //Spider Begining
         spider : {
+            bgSource: "path/to/image.jpg",
             text : "Feeling the warmth of the sun in your face, you awake still in pain from the wounds your sister gave you. You find yourself in a giant spider web inside an open area with rocky walls and a giant opening at the top. You spot the light hue of the blue spider wandering in the dark, staring at you. Panicked, you try to escape the web but are unable to.",
             choices : [
-             ["Wriggle", "wrig"],
-             ["Look around", "look"],
-             ["Accept your fate as spider food", "fate"]
+                ["Wriggle", "wrig"],
+                ["Look around", "look"],
+                ["Accept your fate as spider food", "fate"]
             ]
         },
+         wrig: {
+            text : "You decide to wriggle out, however you werent able to. After constant wriggling the web loosens and you make it out of the web. You catch your fall and decide to escape so you enter a nearby cave entrance in the spider's den. The cave is too small for the spider to pursue. You wander in the darkness, limping while hugging hard cold walls of the cave. You suddenly feel something small brush past your leg. Shaken up at first, you halt trying to detect the unknown creature. However, you hear its pitter patter footsteps running the same direction as you were going. Relived, you follow it until eventually you make it out of the cave. You exit the cave and the unknown creature was actually small and fuzzy. You thank the unknown creature for its support and continue on your way. You eventually find yourself near a water source and decide to drink some. While near the water you clean your injuries and patch them with loose leaves. You then think about what you should do to enact revenge upon your corrupt sister. Before you try to even think about revenge, you decide to discover the unknown world.",
+         },
+          look: {
+            text : "You look at your surroundings and you find a nearby rusty hand axe and a frail looking sword.",
+            choices : [
+                ["Axe", "axe"],
+                ["Frail Sword", "sword"],
+                ["Choose Neither", "none"]
+            ]
+         },
+         axe: {
+            text : "You grab the axe and cut the web, you drop the axe trying to catch your fall, the axe falls on the ground but it is still in good condition. You feel the need to escape so you enter a nearby cave entrance in the spider's den, the cave is too small for the spider to pursue. You wander the darkness, not knowing where you are going, suddenly you feel a small creature brush past your leg, shaken up at first, you halt trying to detect the unknown creature. However, you hear its pitter patter footsteps running the same direction as you were going. Relived, you follow it until eventually you make it out of the cave. You exit the cave and the unknown creature was actually small and fuzzy. You thank the unknown creature for its support and continue on your way. You eventually find yourself near a water source and decide to drink some. While near the water you clean your injuries and patch them with loose leaves. You then think about what you should do to enact revenge upon your corrupt sister. Before you try to even think about revenge, you decide to discover the unknown world.",
+         },
+         sword: {
+            text : "You grab the sword and cut the web, you drop the sword trying to catch your fall, the sword falls on the ground and shatters on impact. You decide to abandon it and escape so you enter a nearby cave entrance in the spider's den, the cave is too small for the spider to pursue. You wander the darkness, not knowing where you are going, suddenly you feel a small creature brush past your leg, shaken up at first, you halt trying to detect the unknown creature. However, you hear its pitter patter footsteps running the same direction as you were going. Relived, you follow it until eventually you make it out of the cave. You exit the cave and the unknown creature was actually small and fuzzy. You thank the unknown creature for its support and continue on your way. You then think about what you should do to enact revenge upon your corrupt sister. Before you try to even think about revenge, you decide to discover the unknown world.",
+         },
+         none: {
+            text : "You decide to not grab any of the weapons and try to claw at the hard webbing. You break a piece of the web, however that causes you to drop and spin into more web leaving you stuck. Unable to get out, you succumb to your injuries and die.",
+         },
+         fate: {
+            text : "You panic and decide that death is the best option. You await for the spider to eat you, however since its day, it is unable to do you harm. Regardless, you stick with your choice to stay in the web and you slowly succumb to the injuries and die.",
+         },
+
         village : {
+            bgSource: "path/to/image.jpg",
             text : "An unknown smell wakes you up and you find yourself in some soft material. While injured, you get up and decide you need to do something.",
-            choices : []
+            choices : [
+                ["Sit for Eternity","sit"],
+                ["Explore Surroundings","explore"],
+                ["Think","think"]
+            ]
         },
         shore : {
+            bgSource: "path/to/image.jpg",
             text : "You awake in salty water with sand on your face. Dazed and injured, you start to walk and limp away from the cold salty water and rest under the shade of a palm tree. You decided you need to move and figure out a way to secure food, water, and to patch your wounds.",
-            choices : []
+            choices : [
+                ["Shake palm tree", "shakepalmTree"],
+                ["Head into forest", "intoforestTwo"],
+                ["Swim in the water", "swimWater"]
+            ]
+        },
+
+}
+
+// THANK YOU FAST FOR HELPING ME ON THIS PART!!!!! - Dillan
+function buildChoices(storyObject){
+    if (storyObject.choices.length === 0) { //if the choices array is empty
+        let newBtn = document.createElement('button');
+            newBtn.innerText = "Begin the Adventure";
+            newBtn.addEventListener('click', () => {
+                startStory();
+            })
+        choiceCont.appendChild(newBtn);
+    } else { //assume there are choices to make
+        for(let choice of storyObject.choices){
+            let newBtn = document.createElement('button');
+            newBtn.innerText = choice[0]; // show the text in index 0
+            newBtn.addEventListener('click', () => {
+                myStory.push(choice[1]) // push the story key ine index 1
+                console.log('Story Array', myStory); // log story array
+                renderStory();
+//----------------> call story render function here
+
+            })
+            choiceCont.appendChild(newBtn);
         }
-
-}
-
-
-
-
-function rando() {
-    return Math.floor(Math.random() * 3);
-}
-
-let t = rando()
-function start() {
-    if (t === 0) {
-        return spider;
-    } else if (t === 1) {
-        return village;
-    } else {
-        return shore;
     }
 }
 
-
-function begin(text) {
-    const story = document.createElement('p');
-    story.innerText = text;
+function startStory() {
+    myStory.push(startOptions[Math.floor(Math.random() * startOptions.length)]); //randomize starter beginning
+    console.log('Story Array', myStory); //log story array
+    renderStory();
+    //call render story function here
 }
 
-start()
 
+
+
+
+function renderStory() {
+    //cureent scene of the story array
+    let currentScene = myStory[myStory.length - 1];
+    // Empty the story and choices
+    storyCont.innerHTML = "";
+    choiceCont.innerHTML = "";
+
+//This builds the story into the story array
+ for (let scene of myStory) {
+        let storyText = document.createElement("p");
+        storyText.innerText = story[scene].text;
+        storyCont.appendChild(storyText);
+    }
+    //Builds the buttons for the current scene the user on
+    buildChoices(story[currentScene]);
+}
+renderStory();
 
 
 
