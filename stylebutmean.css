@@ -2,13 +2,56 @@ body {
     background-color: black;
 }
 
-
 #textbox {
     display: flex;
-    
+    justify-self: center;
     height: 200px;
-    width: 1250px;
+    width: 800px;
     background-repeat: no-repeat;
     background-image: url(Text.png);
-    background-size: 400px 800;
+    transform: translateY(500px);
+}
+
+#collapse {
+    height: 400px;
+    width: 400px;
+    transform: translate(900px, -100px);
+}
+
+#qte1, #qte2, #qte3 {
+    position: fixed;
+    background-size: 150px;
+    height: 150px;
+    width: 150px;
+    visibility: hidden;
+}
+
+#option1 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    height: 200px;
+    width: 400px;
+    background-image: url(option.png);
+    background-size: 400px 200px;
+    background-repeat: no-repeat;
+}
+
+#opt1 {
+    transform: translateY(50px);
+}
+
+#option2 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    height: 200px;
+    width: 400px;
+    background-image: url(option.png);
+    background-size: 400px 200px;
+    background-repeat: no-repeat;
+}
+
+#opt2 {
+    transform: translateY(50px);
 }
