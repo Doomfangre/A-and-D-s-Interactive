@@ -39,9 +39,13 @@ function quick1() {
         document.getElementById("h2").style.visibility = `hidden`;
         } else if (health == 0) {
         document.getElementById("h1").style.visibility = `hidden`;
+        window.location.href = "act2.html";
         }
+
+        return;
     }
-});
+}, { once: true }); 
+
     setTimeout(() => {
         document.getElementById("qte1").style.visibility = "hidden";
         document.getElementById("qte1").style.backgroundImage = ``;
@@ -80,9 +84,13 @@ function quick2() {
         document.getElementById("h2").style.visibility = `hidden`;
         } else if (health == 0) {
         document.getElementById("h1").style.visibility = `hidden`;
+        window.location.href = "act2.html";
         }
+
+        return;
     }
-});
+}, { once: true }); 
+
     setTimeout(() => {
         document.getElementById("qte2").style.visibility = "hidden";
         document.getElementById("qte2").style.backgroundImage = ``;
@@ -129,11 +137,13 @@ function quick3() {
         return;
         } else if (health == 0) {
         document.getElementById("h1").style.visibility = `hidden`;
+        window.location.href = "act2.html";
         return;
         }
-        
+
+        return;
     }
-});
+}, { once: true }); 
     setTimeout(() => {
         document.getElementById("qte3").style.visibility = "hidden";
         document.getElementById("qte3").style.backgroundImage = ``;
@@ -144,7 +154,7 @@ function wait() {
     setTimeout(() => {
         document.getElementById("option1").style.visibility = "visible";
         document.getElementById("option2").style.visibility = "visible";
-    }, 8000);
+    }, 5000);
 }
 
 function quickattack() {
