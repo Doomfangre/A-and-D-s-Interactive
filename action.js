@@ -5,6 +5,8 @@ function goneagainO() {
 
 let health = 9;
 
+
+
 function quick1() {
     document.getElementById("qte1").style.transform = `translate(0px, 0px)`;
     document.getElementById("qte1").style.backgroundImage = `url(qte1.gif)`;
@@ -17,6 +19,27 @@ function quick1() {
         document.getElementById("qte1").style.visibility = "hidden";
         document.getElementById("qte1").style.backgroundImage = ``;
         health -= 1;
+
+
+        if (health == 8) {
+        document.getElementById("h9").style.visibility = `hidden`;
+        } else if (health == 7) {
+        document.getElementById("h8").style.visibility = `hidden`;
+        } else if (health == 6) {
+        document.getElementById("h7").style.visibility = `hidden`;
+        } else if (health == 5) {
+        document.getElementById("h6").style.visibility = `hidden`;
+        } else if (health == 4) {
+        document.getElementById("h5").style.visibility = `hidden`;
+        } else if (health == 3) {
+        document.getElementById("h4").style.visibility = `hidden`;
+        } else if (health == 2) {
+        document.getElementById("h3").style.visibility = `hidden`;
+        } else if (health == 1) {
+        document.getElementById("h2").style.visibility = `hidden`;
+        } else if (health == 0) {
+        document.getElementById("h1").style.visibility = `hidden`;
+        }
     }
 });
     setTimeout(() => {
@@ -25,7 +48,7 @@ function quick1() {
     }, 900);
 };
 
-function quick2(a) {
+function quick2() {
     document.getElementById("qte2").style.transform = `translate(0px, 0px)`;
     document.getElementById("qte2").style.backgroundImage = `url(qte2.gif)`;
     const randomer2 = Math.floor(Math.random() * 700) + 100;
@@ -37,6 +60,27 @@ function quick2(a) {
         document.getElementById("qte2").style.visibility = "hidden";
         document.getElementById("qte2").style.backgroundImage = ``;
         health -= 1;
+
+
+        if (health == 8) {
+        document.getElementById("h9").style.visibility = `hidden`;
+        } else if (health == 7) {
+        document.getElementById("h8").style.visibility = `hidden`;
+        } else if (health == 6) {
+        document.getElementById("h7").style.visibility = `hidden`;
+        } else if (health == 5) {
+        document.getElementById("h6").style.visibility = `hidden`;
+        } else if (health == 4) {
+        document.getElementById("h5").style.visibility = `hidden`;
+        } else if (health == 3) {
+        document.getElementById("h4").style.visibility = `hidden`;
+        } else if (health == 2) {
+        document.getElementById("h3").style.visibility = `hidden`;
+        } else if (health == 1) {
+        document.getElementById("h2").style.visibility = `hidden`;
+        } else if (health == 0) {
+        document.getElementById("h1").style.visibility = `hidden`;
+        }
     }
 });
     setTimeout(() => {
@@ -45,7 +89,7 @@ function quick2(a) {
     }, 900);
 };
 
-function quick3(p) {
+function quick3() {
     document.getElementById("qte3").style.transform = `translate(0px, 0px)`;
     document.getElementById("qte3").style.backgroundImage = `url(qte3.gif)`;
     const randomer3 = Math.floor(Math.random() * 700) + 100;
@@ -53,10 +97,41 @@ function quick3(p) {
     document.getElementById("qte3").style.transform = `translate(${randomer3}px, ${randomest3}px)`;
     document.getElementById("qte3").style.visibility = `visible`;
     document.addEventListener('keyup', (event) => {
-    if (event.p === 'p') {
+    if (event.key === 'p') {
         document.getElementById("qte3").style.visibility = "hidden";
         document.getElementById("qte3").style.backgroundImage = ``;
         health -= 1;
+        
+        if (health == 8) {
+        document.getElementById("h9").style.visibility = `hidden`;
+        controller.abort();
+        return;
+        } else if (health == 7) {
+        document.getElementById("h8").style.visibility = `hidden`;
+        return;
+        } else if (health == 6) {
+        document.getElementById("h7").style.visibility = `hidden`;
+        return;
+        } else if (health == 5) {
+        document.getElementById("h6").style.visibility = `hidden`;
+        return;
+        } else if (health == 4) {
+        document.getElementById("h5").style.visibility = `hidden`;
+        return;
+        } else if (health == 3) {
+        document.getElementById("h4").style.visibility = `hidden`;
+        return;
+        } else if (health == 2) {
+        document.getElementById("h3").style.visibility = `hidden`;
+        return;
+        } else if (health == 1) {
+        document.getElementById("h2").style.visibility = `hidden`;
+        return;
+        } else if (health == 0) {
+        document.getElementById("h1").style.visibility = `hidden`;
+        return;
+        }
+        
     }
 });
     setTimeout(() => {
@@ -65,11 +140,20 @@ function quick3(p) {
     }, 900);
 };
 
+function wait() {
+    setTimeout(() => {
+        document.getElementById("option1").style.visibility = "visible";
+        document.getElementById("option2").style.visibility = "visible";
+    }, 8000);
+}
+
 function quickattack() {
     one = quick1();
     two = quick2();
     three = quick3();
+    waits = wait();
 }
+
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 
