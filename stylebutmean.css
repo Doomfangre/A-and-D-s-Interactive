@@ -1,21 +1,38 @@
 body {
+    background-image: url(circles-pixilart.gif);
+}
+
+.back {
     background-color: black;
+    width: 2000px;
+    height: 220px;
+    transform: translateY(500px);
 }
 
 #textbox {
     display: flex;
     justify-self: center;
+    align-content: end;
     height: 200px;
     width: 800px;
     background-repeat: no-repeat;
     background-image: url(Text.png);
-    transform: translateY(500px);
+    transform: translateY(700px);
+}
+
+#soar {
+    height: 200px;
+    width: 200px;
 }
 
 #collapse {
     height: 400px;
     width: 400px;
-    transform: translate(900px, -100px);
+}
+
+.att {
+    display: flex;
+    justify-content: space-around;
 }
 
 #qte1, #qte2, #qte3 {
@@ -37,10 +54,6 @@ body {
     background-repeat: no-repeat;
 }
 
-#opt1 {
-    transform: translateY(50px);
-}
-
 #option2 {
     font-size: 50px;
     color: white;
@@ -50,8 +63,4 @@ body {
     background-image: url(option.png);
     background-size: 400px 200px;
     background-repeat: no-repeat;
-}
-
-#opt2 {
-    transform: translateY(50px);
 }
