@@ -1,14 +1,71 @@
 body {
-    background-color: black;
+    background-image: url(circles-pixilart.gif);
 }
 
+.back {
+    background-color: black;
+    width: 2000px;
+    height: 220px;
+    transform: translateY(500px);
+}
+
+.bars {
+    display: flex;
+    justify-content: center;
+}
 
 #textbox {
     display: flex;
-    
+    justify-self: center;
+    align-content: end;
     height: 200px;
-    width: 1250px;
+    width: 800px;
     background-repeat: no-repeat;
     background-image: url(Text.png);
-    background-size: 400px 800;
+    transform: translateY(700px);
+}
+
+#soar {
+    height: 200px;
+    width: 200px;
+}
+
+#collapse {
+    height: 400px;
+    width: 400px;
+}
+
+.att {
+    display: flex;
+    justify-content: space-around;
+}
+
+#qte1, #qte2, #qte3 {
+    position: fixed;
+    background-size: 150px;
+    height: 150px;
+    width: 150px;
+    visibility: hidden;
+}
+
+#option1 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    height: 200px;
+    width: 400px;
+    background-image: url(option.png);
+    background-size: 400px 200px;
+    background-repeat: no-repeat;
+}
+
+#option2 {
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    height: 200px;
+    width: 400px;
+    background-image: url(option.png);
+    background-size: 400px 200px;
+    background-repeat: no-repeat;
 }
