@@ -49,6 +49,7 @@ function quick1() {
     setTimeout(() => {
         document.getElementById("qte1").style.visibility = "hidden";
         document.getElementById("qte1").style.backgroundImage = ``;
+        document.getElementById("collapse").src = `collatt.gif`;
     }, 900);
 };
 
@@ -154,6 +155,7 @@ function wait() {
     setTimeout(() => {
         document.getElementById("option1").style.visibility = "visible";
         document.getElementById("option2").style.visibility = "visible";
+        document.getElementById("collapse").src = `crumble.gif`;
     }, 5000);
 }
 

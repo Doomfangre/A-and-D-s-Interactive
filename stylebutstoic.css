@@ -1,5 +1,5 @@
 body {
-    background-image: url(Plus.gif);
+    background-image: url(circles-pixilart.gif);
 }
 
 .blac {
@@ -43,17 +43,6 @@ body {
 #collapse {
     height: 400px;
     width: 400px;
-    animation: mov 3s ease-in-out 0s infinite alternate;
-}
-
-@keyframes mov {
-  0% {
-    transform: translateX(0px);
-  }
-
-  100% {
-    transform: translateX(100px);
-  }
 }
 
 .att {
