@@ -2,15 +2,33 @@ body {
     background-image: url("andromeda-pixilart.png");
     background-size: 1000px;
     color: white;
+    position: initial;
 }
 
 h1 {
-    transform: translateX(1000px);
+    text-align: center;
     font-size: 40px;
 }
 
-label {
+.thestupidlabel {
     font-size: 50px;
+    transform: translateY(-300px);
+}
+.gta6 {
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-900px);
+    position: sticky;
+}
+
+#textbox {
+    font-family: "Jersey 10", sans-serif;
+    display: flex;
+    justify-self: center;
+    height: 200px;
+    width: 800px;
+    background-repeat: no-repeat;
+    background-image: url(Text.png);
 }
 
 #box {
@@ -19,24 +37,15 @@ label {
     height: 750px;
     width: 1250px;
     background-color: black;
+    display: flex;
+    justify-self: center;
+    
 }
 
-#main-box {
-    display: flex;
-    justify-content: space-between;
-}
 
 .boxes {
     height: 750px;
     
-}
-
-#qte1, #qte2, #qte3 {
-    position: fixed;
-    background-size: 150px;
-    height: 150px;
-    width: 150px;
-    visibility: hidden;
 }
 
 #Aura {
@@ -59,6 +68,6 @@ progress::-webkit-progress-bar {
 }
 
 progress::-webkit-progress-value {
-  background-color: rgb(2, 78, 243);
+  background-color: rgb(41, 104, 240);
   border-radius: 100px;
 }

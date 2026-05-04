@@ -3,18 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet"/>
     <title>Hymn of Daedalus</title>
 </head>
 <body>
-    <header>Hymn of Daedalus</header>
-    <section>
-        <label>Aura</label>
-        <progress class="Aura" value="67" max="100"></progress>
-    </section>
 
         <!--Ostory object will send text here-->
-        <section id="story"></section>
-        <section id="choices"></section>
+        
+
+        
+        <div id="box"></div>
+        <div id="textbox"><section id="story"></section>
+        <section id="choices"></section></div>
+
+
+    <label class="thestupidlabel">Aura</label>
+        <section class="gta6">
+            <progress id="Aura" value="50" max="100" value="10"></progress>      
+            <div id="Inventory"><img src="invent.png" class="boxes"></div>
+        </section>
+
     <section>
             <section class="Inventory"></section>
             <section class="Inventory"></section>
@@ -33,10 +41,6 @@ const choiceCont = document.getElementById("choices")
 const startOptions = ["spider","shore","village"]
 const myStory = ['introStory']
 const story = {
-        introStory : {
-            text : "Up above the clouds, there is a kingdom in which you play as our main protagonist. Sora, the prince and heir to the king. You reside in the living castle along with your mother and younger sister. One day, your younger sister disappears, and for a week your parents are restlessly searching for her. Until eventually she is found and returned. However, you notice a change in your sister's behavior but don't think much of it. Tragically, only a week later, the parents, who are the king and queen, were found deceased due to an unknown cause. In the kings will, you were supposed to become the new ruler of the kingdom. However, the head royal guard declared your sister to be the ruler of the kingdom. The head guard explained to the public how the deaths of the king, queen, and the heir to the throne were tragic. He explained that the bloodline will live through the soon to be queen of the living castle. Confused, he confronts his sister, however his sister is not the same as she was before her disappearance. She had become significantly stronger and when you confronted her, she had a weapon in her hand. You were beaten almost to the brink of death, and was slowly losing consciousness as you were dragged to the edge of the clouds. She explains how she was the one who ended their parents and how now she will end you. She then kicks you off the edge of the clouds. You lose consciousness from the power kick and rapidly fall down to the earth, unknowingly starting your journey.", 
-            choices : [] // empty to invoke special logic 
-        },
         //Beginnings
         spider : {
             bgSource: "path/to/image.jpg",
