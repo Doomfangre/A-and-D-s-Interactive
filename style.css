@@ -1,17 +1,19 @@
 body {
     background-image: url("andromeda-pixilart.png");
     background-size: 1000px;
+    color: white;
 }
 
 h1 {
-    color: white;
     transform: translateX(1000px);
     font-size: 40px;
 }
 
-#main-box {
-    display: flex;
-    justify-self: center;
+label {
+    font-size: 50px;
+}
+
+#box {
     border: white;
     border-width: 5px;
     height: 750px;
@@ -19,9 +21,14 @@ h1 {
     background-color: black;
 }
 
+#main-box {
+    display: flex;
+    justify-content: space-between;
+}
+
 .boxes {
     height: 750px;
-    transform: translate(1750px, -650px);
+    
 }
 
 #qte1, #qte2, #qte3 {
@@ -30,4 +37,28 @@ h1 {
     height: 150px;
     width: 150px;
     visibility: hidden;
+}
+
+#Aura {
+    rotate: 270deg;
+    height: 35px;
+    width: 500px;
+    transform: translateX(-310px);
+}
+
+progress[value] {
+appearance: none;
+display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+progress::-webkit-progress-bar {
+  background-color: white;
+  border-radius: 100px;
+}
+
+progress::-webkit-progress-value {
+  background-color: rgb(2, 78, 243);
+  border-radius: 100px;
 }
